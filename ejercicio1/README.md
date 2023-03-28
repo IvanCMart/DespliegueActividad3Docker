@@ -1,7 +1,8 @@
-# Iván Castaño Martínez
+##### Iván Castaño Martínez  - DAW CIFP La Laboral
 
+Esta carpeta contiene archivos para dar solución a la <u>Actividad Evaluable 3 - Docker - 2ª EV</u>
 
+### Ejercicio 1 - TRABAJO CON IMÁGENES
 
-Este es el archivo README del ejercicio1.
-
-Aquí irá la descripción:
+1. Sevidor WEB
+2. Servidor de base de datos
