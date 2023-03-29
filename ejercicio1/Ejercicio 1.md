@@ -2,7 +2,7 @@
 
 Arranco contenedor con una instancia de la imagen `php:7.4-apache`
 
-![Captura01](/home/ivan/Documentos/tareaDocker/ejercicio1/capturas/Captura01.png)
+![Captura01](../capturas/Captura01.png)
 
 Elimino el contenedor y creo un nuevo usando *bind mount* para montar mi propio directorio y que persistan los datos
 
