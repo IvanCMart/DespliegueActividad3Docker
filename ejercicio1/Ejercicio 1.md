@@ -36,3 +36,25 @@ servidor
 ```
 
 ![Captura07](./capturas/Captura07.png)
+
+
+
+
+
+# 1.2 Servidor de base de datos
+
+
+
+Descargamos la imagen de `mariadb`
+
+![Captura8](./capturas/Captura8.png)
+
+Creamos el contenedor en un directorio personalizado para que persistan los datos y, si necesito crear un nuevo contenedor, puedo indicar ese directorio como *bind mount* para tener accesible la información.
+
+```
+docker run --name bbdd -v /home/ivan/Documentos/tareaDocker/ejercicio1/contenedor2:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d mariadb
+```
+
+![Captura09](./capturas/Captura09.png)
+
+Ejecuto contenedor

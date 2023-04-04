@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  db:
+     container_name: bbdd
+     image: mariadb
+     restart: always
+     environment:
+        MYSQL_DATABASE: base1
+        MYSQL_USER: daw
+        MYSQL_PASSWORD: laboral1
+        MYSQL_ROOT_PASSWORD: root
+     volumes:
+        - ./mysql:/var/lib/mysql
