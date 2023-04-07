@@ -49,12 +49,34 @@ Descargamos la imagen de `mariadb`
 
 ![Captura8](./capturas/Captura8.png)
 
-Creamos el contenedor en un directorio personalizado para que persistan los datos y, si necesito crear un nuevo contenedor, puedo indicar ese directorio como *bind mount* para tener accesible la información.
-
-```
-docker run --name bbdd -v /home/ivan/Documentos/tareaDocker/ejercicio1/contenedor2:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d mariadb
-```
+Utilizo un fichero `docker-compose` para la creación y declaración de las variables de entorno requeridas en el enunciado
 
 ![Captura09](./capturas/Captura09.png)
 
-Ejecuto contenedor
+Ejecutamos el fichero
+
+![Captura10](./capturas/Captura10.png)
+
+
+
+![Captura11](./capturas/Captura11.png)
+
+Accedemos a la consola del contenedor y muestro la base de datos
+
+![Captura12](./capturas/Captura12.png)
+
+Me conecto como usuario *root* y creo la tabla *tabla1*
+
+![Captura13](./capturas/Captura13.png)
+
+Muestro la tabla creada
+
+![Captura14](./capturas/Captura14.png)
+
+Intento borrar la imagen `mariadb` y compruebo que no se permite mientras el contenedor está creado
+
+![Captura15](./capturas/Captura15.png)
+
+Elimino y muestro que no hay ningún contenedor
+
+![Captura16](./capturas/Captura16.png)
